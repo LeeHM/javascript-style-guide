@@ -219,8 +219,6 @@
   <a name="es6-object-concise"></a><a name="3.6"></a>
   - [3.4](#es6-object-concise) 속성의 단축구문을 사용하세요. eslint: [`object-shorthand`](https://eslint.org/docs/rules/object-shorthand.html)
 
-    > Why? It is shorter to write and descriptive.
-
     > 왜? 설명이 간결해지기 때문입니다.    
 
     ```javascript
@@ -530,9 +528,7 @@
 
   <a name="destructuring--object-over-array"></a><a name="5.3"></a>
   - [5.3](#destructuring--object-over-array) 여러 값을 반환하는 경우 배열 비구조화가 아닌 객체 비구조화를 사용하세요.
-
-    > Why? You can add new properties over time or change the order of things without breaking call sites.
-
+  
     > 왜? 이렇게 하면 이후 호출처에 영향을 주지 않고 새로운 속성을 추가하거나 순서를 변경할 수 있습니다.
 
     ```javascript
@@ -767,8 +763,6 @@
   <a name="functions--default-side-effects"></a><a name="7.8"></a>
   - [7.8](#functions--default-side-effects) 부작용이 있을 기본 매개변수는 사용하지 마세요.
 
-    > Why? They are confusing to reason about.
-
     > 왜? 혼란을 야기하기 때문입니다.
 
     ```javascript
@@ -801,8 +795,6 @@
   <a name="functions--constructor"></a><a name="7.10"></a>
   - [7.10](#functions--constructor) 절대로 새로운 함수를 만들기 위해 함수 생성자를 사용하지 마세요. eslint: [`no-new-func`](https://eslint.org/docs/rules/no-new-func)
 
-    > Why? Creating a function in this way evaluates a string similarly to eval(), which opens vulnerabilities.
-
     > 왜? 이러한 방법으로 문자열을 평가해 함수를 만드는 것은 eval()과 같은 수준의 취약점을 만듭니다.
 
     ```javascript
@@ -815,8 +807,6 @@
 
   <a name="functions--signature-spacing"></a><a name="7.11"></a>
   - [7.11](#functions--signature-spacing) 함수 시그니처에 공백을 넣으세요. eslint: [`space-before-function-paren`](https://eslint.org/docs/rules/space-before-function-paren) [`space-before-blocks`](https://eslint.org/docs/rules/space-before-blocks)
-
-    > Why? Consistency is good, and you shouldn’t have to add or remove a space when adding or removing a name.
 
     > 왜? 일관성을 갖는 것은 좋으니까요. 그리고 이렇게 하면 이름을 추가하거나 지울 때 공백을 건드릴 필요가 없게 됩니다.
 
@@ -1329,9 +1319,7 @@
   <a name="modules--no-mutable-exports"></a>
   - [10.5](#modules--no-mutable-exports) 변경 가능한 바인딩을 export하지 마세요.
  eslint: [`import/no-mutable-exports`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-mutable-exports.md)
-
-    > Why? Mutation should be avoided in general, but in particular when exporting mutable bindings. While this technique may be needed for some special cases, in general, only constant references should be exported.
-
+ 
     > 왜? 변경은 일반적으로 피해야 하지만, 변경 가능한 바인딩을 export할 때는 특히 그렇습니다. 이 기술이 어떤 특별한 상황에만 필요할 수도 있지만, 일반적으로는 상수 참조만 export되어야 합니다.
 
     ```javascript
@@ -1592,8 +1580,6 @@
     const superPower = new SuperPower();
     ```
 
-  <a name="variables--one-const"></a><a name="13.2"></a>
-  - [13.2](#variables--one-const) Use one `const` or `let` declaration per variable. eslint: [`one-var`](https://eslint.org/docs/rules/one-var.html)
   <a name="variables--one-const"></a><a name="13.2"></a>
   - [13.2](#variables--one-const) 하나의 변수에 하나의 `const` 또는 `let`을 사용하세요. eslint: [`one-var`](https://eslint.org/docs/rules/one-var.html)
 
